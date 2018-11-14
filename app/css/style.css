@@ -1,0 +1,46 @@
+#center {
+    background-color: grey !important;
+    padding: 30px;
+    top: 160px;
+    position: relative;
+}
+
+.card-body {
+    display: inline-flex;
+}
+.center {
+    margin: auto;
+    width: 66.66666667%;
+}
+
+.card-body img {
+    border: 5px solid white;
+}
+
+.sp-horizontal .sp-next-arrow, .sp-horizontal.sp-rtl .sp-previous-arrow {
+    right: -40px;
+}
+
+.sp-horizontal .sp-previous-arrow {
+    left: -40px;
+}
+.card-text {
+    margin-right: 15px;
+}
+
+.card-header {
+    position: absolute;
+}
+.mySlides {
+    height: 120px;
+    text-align: center;
+    transition: height 0.7s ease 0s;
+}
+
+.hidden {
+    display: none
+}
+
+#slider-pro {
+    margin: auto;
+}

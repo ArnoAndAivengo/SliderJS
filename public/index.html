@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Slider Pro</title>
+
+	<link rel="stylesheet" type="text/css" href="../app/css/slider-pro.min.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../app/css/style.css" media="screen"/>
+	<link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<script type="text/javascript" src="../vendor/jquery/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="../vendor/jquery/jquery.sliderPro.min.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function( $ ) {
+		$('#slider-pro').sliderPro({
+			width: 700,
+			height: 200,
+			fade: true,
+			arrows: false,
+			buttons: false,
+			shuffle: true,
+			smallSize: 500,
+			mediumSize: 1000,
+			largeSize: 3000,
+			thumbnailArrows: true,
+            waitForLayers: true,
+			autoplay: false,
+            responsive: true,
+            autoHeight: true,
+		});
+        var x = document.getElementsByClassName("sp-thumbnails");
+        if (x[0].childElementCount >= 5) {
+            $( '#slider-pro' ).sliderPro({
+                arrows: true,
+            });
+        }
+	});
+</script>
+
+
+</head>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div id="center" >
+			<div id="slider-pro">
+				<div class="sp-slides">
+
+					<!--SUPERMAN-->
+					<div class="sp-slide">
+						<div class="card">
+							<div class="card-body">
+								<div class="card-text">
+									<h1 class="card-title" onclick="showElem()">SUPERMAN</h1>
+									<h2>Super Hero</h2>
+									<p class="description">
+										Born on an alien planet, Superman is is rocketed to Earth by his scientist father moments before the planet's destruction. The rocket lands on Earth, where he is found by passing motorists who adopt him and give him the name Clark Kent. As Clark reaches maturity, he learns he has superhuman abilities which he resolves to use selflessly to help others, fighting everything from petty crime to universal threats. Of all popular culture superheroes, Superman is probably the best known and the most pure of heart and purpose.
+									</p>
+									<div class="card-footer">
+										<a class="moreText" href="#">подробнее</a>
+										<div class="switch" onclick="hiddenElem()">
+											<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<img class="card-images" src="../app/images/hero_superman.jpg" height="300" width="200"/>
+							</div>
+						</div>
+					</div>
+
+					<!--BATMAN-->
+					<div class="sp-slide">
+						<div class="card">
+
+							<div class="card-body">
+								<div class="card-text">
+									<h1 class="card-title">BATMAN</h1>
+									<h2>Super Hero</h2>
+									<p  class="description">
+										Batman is the alter-ego of Bruce Wayne, a millionaire industrialist and philanthropist, who is driven to fight crime after witnessing the murder of his parents as a child. Unlike most superheroes, he does not possess any superhuman powers or abilities; he makes use of intellect, detective skills, technology, and physical prowess. While a devoted believer in right and justice, Batman has a dark side, and sometimes teeters on the line between justice and vengeance.</p>
+									</p>
+
+									<div class="card-footer">
+										<a class="moreText" href="#">подробнее</a>
+										<div class="switch">
+											<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<img class="card-images" src="../app/images/hero_batman.jpg" height="300" width="200"/>
+							</div>
+
+						</div>
+					</div>
+
+					<!--WONDER WOMAN-->
+					<div class="sp-slide">
+						<div class="card">
+
+							<div class="card-body">
+								<div class="card-text">
+									<h1 class="card-title">WONDER WOMAN</h1>
+									<h2>Super Hero</h2>
+									<p class="description">
+										Wonder Woman is a member of an all-female tribe of Amazons whose mission is to bring the ideals of love, peace, and sexual equality to the rest of the world. Her powers include super strength, speed, stamina, and flight. She is highly proficient in hand-to-hand combat and in the art of tactical warfare. She also possesses an animal-like cunning and a natural rapport with animals. She uses her Lasso of Truth (which forces those bound by it to tell the truth), a pair of indestructible bracelets, and an invisible plane, which eventually led to an ability to fly unaided.
+									</p>
+									<div class="card-footer">
+										<a class="moreText" href="#">подробнее</a>
+										<div class="switch">
+											<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<img class="card-images" src="../app/images/hero_wonderwoman.jpg" height="300" width="200"/>
+							</div>
+						</div>
+					</div>
+
+					<!--SPIDERMAN-->
+					<div class="sp-slide">
+						<div class="card">
+							<div class="card-body">
+								<div class="card-text">
+									<h1 class="card-title">SPIDERMAN</h1>
+									<h2>Super Hero</h2>
+									<p class="description">
+										Gaining the powers of Spider-Man after he is bitten by a radioactive spider, Peter Parker is beset as much by the travails and problems of ordinary life as he is with fighting supervillains. His powers give him the ability to do good, but seriously complicate his career and personal relationships. In spite of this, he feels a strong duty to do what he can to fight crime and corruption. This goes back to a moment of inaction when, after newly acquiring his superpowers, Peter allowed a thief to escape, who subsequently killed his Uncle Ben. Realizing that he could have prevented his uncle's death, Peter commits to a life of crimefighting and helping others, driven by his uncle's words, "With great power there must also come great responsibility."
+									</p>
+									<div class="card-footer">
+										<a class="moreText" href="#">подробнее</a>
+										<div class="switch">
+											<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<img class="card-images" src="../app/images/hero_spiderman.jpg" height="300" width="200"/>
+							</div>
+						</div>
+					</div>
+
+					<!--THE HULK-->
+					<div class="sp-slide">
+						<div class="card">
+							<div class="card-body">
+								<div class="card-text">
+									<h1 class="card-title">THE HULK</h1>
+									<h2 class="status-hero">Super Hero</h2>
+									<p class="description">
+										The Hulk is the alter ego of Dr. Robert Bruce Banner. Banner is a scientist who, as a result of exposure to gamma radiation becomes a large, superhumanly strong, (usually) green creature of pure rage whenever he becomes angry. Although the Hulk is usually classified as a superhero, he and Banner share a Dr. Jekyll and Mr. Hyde-like relationship. In his most common incarnation, the Hulk has little intelligence and self-control and can cause great destruction, although he also is inclined to fight evil and protect the innocent. Because of the Hulk's awesome rage and destructive capability, he is regulary hunted by the military and other superheroes.
+									</p>
+									<div class="card-footer">
+										<a class="moreText" href="#">подробнее</a>
+										<div class="switch">
+											<i class="fa fa-minus-square-o" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<img class="card-images" src="../app/images/hero_hulk.jpg" height="300" width="200"/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sp-thumbnails">
+					<img class="sp-thumbnail" src="../app/images/superman-mini.jpg"/>
+					<img class="sp-thumbnail" src="../app/images/batman-mini.jpg"/>
+					<img class="sp-thumbnail" src="../app/images/wonder-woman-mini.png"/>
+					<img class="sp-thumbnail" src="../app/images/spiderma-mini.jpg"/>
+					<img class="sp-thumbnail" src="../app/images/hulk-mini.jpg"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="../app/js/scripts.js"></script>
+</body>
+</html>
